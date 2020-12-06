@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Query.AddToQueue">
+
+    <NavigationPage.TitleView>
+        <Label Text="Add coffee to queue" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20" Orientation="Vertical">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="LatteMacchiato.jpg" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Latte Machiato" Clicked="IncreaseLatteMacchiatioAmount" HorizontalOptions="FillAndExpand" />
+                    <Label x:Name="LatteMacchiatoDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="Cappucino.jpg" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Cappuccino" Clicked="IncreaseCappucinoAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="CappucinoDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="Milk.jpg" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Milk" Clicked="IncreaseMilkAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="MilkDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="Espresso.jpg" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Espresso" Clicked="IncreaseEspressoAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="EspressoDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="Black.jpg" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Black Coffee" Clicked="IncreaseBlackAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="BlackoDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="LongImage.jpg" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Long" Clicked="IncreaseLongAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="LongDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

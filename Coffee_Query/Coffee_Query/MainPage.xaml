@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Query.MainPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Coffe Queuer" TextColor="White" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+    </NavigationPage.TitleView>
+
+
+    <StackLayout Margin="20" VerticalOptions="CenterAndExpand" x:Name="PageContent" HorizontalOptions="CenterAndExpand">
+
+        <Button Text="+" Margin="30" HeightRequest="100" Font="Bold" FontSize="70" Clicked="OnAdd" />
+
+        <Button Text="-" Margin="30" HeightRequest="100" Font="Bold" FontSize="70" Clicked="OnRemove"/>
+
+    </StackLayout>
+
+</ContentPage>
