@@ -15,7 +15,16 @@ namespace Coffee_Query
             Milk,
             Espresso,
             Black,
-            Long
+            Long,
+
+            DoppioPlus,
+            Americano,
+            Espressox2,
+            CappuccinoPlus,
+            CappuccinoMix,
+            Latte,
+            FlatWhite,
+            EspressoMacchiato
         };
 
         private CoffeesAmount cappucinoAmount;
@@ -25,16 +34,16 @@ namespace Coffee_Query
         private CoffeesAmount blackAmount;
         private CoffeesAmount longAmount;
 
+        private CoffeesAmount doppioPlusAmount;
+        private CoffeesAmount americanoAmount;
+        private CoffeesAmount espressox2Amount;
+        private CoffeesAmount cappuccinoPlusAmount;
+        private CoffeesAmount cappuccinoMixAmount;
+        private CoffeesAmount latteAmount;
+        private CoffeesAmount flatWhiteAmount;
+        private CoffeesAmount espressoMacchiatoAmount;
+
         private List<CoffeesAmount> allCoffees;   //what is this?? 2d list?? 1,5d list?? XD
-
-        /*public uint cappucinoAmount;
-        public uint latteMacchiatioAmount;
-        public uint milkAmount;
-        public uint espressoAmount;
-        public uint blackAmount;
-        public uint longAmount;
-
-        private List<uint> allCoffees;*/
 
 
         public CoffeeCounter()
@@ -47,6 +56,15 @@ namespace Coffee_Query
             espressoAmount = new CoffeesAmount();
             blackAmount = new CoffeesAmount();
             longAmount = new CoffeesAmount();
+            
+            doppioPlusAmount = new CoffeesAmount();
+            americanoAmount = new CoffeesAmount();
+            espressox2Amount = new CoffeesAmount();
+            cappuccinoPlusAmount = new CoffeesAmount();
+            cappuccinoMixAmount = new CoffeesAmount();
+            latteAmount = new CoffeesAmount();
+            flatWhiteAmount = new CoffeesAmount();
+            espressoMacchiatoAmount = new CoffeesAmount();
 
             allCoffees.Add(cappucinoAmount);
             allCoffees.Add(latteMacchiatioAmount);
@@ -54,6 +72,15 @@ namespace Coffee_Query
             allCoffees.Add(espressoAmount);
             allCoffees.Add(blackAmount);
             allCoffees.Add(longAmount);
+            
+            allCoffees.Add(doppioPlusAmount);
+            allCoffees.Add(americanoAmount);
+            allCoffees.Add(espressox2Amount);
+            allCoffees.Add(cappuccinoPlusAmount);
+            allCoffees.Add(cappuccinoMixAmount);
+            allCoffees.Add(latteAmount);
+            allCoffees.Add(flatWhiteAmount);
+            allCoffees.Add(espressoMacchiatoAmount);
         }
 
         #region Getting
@@ -62,6 +89,7 @@ namespace Coffee_Query
             string[] result = GetAmount(coffeToChange);
             resultLabel.FontSize = 17;
             resultLabel.Text = "Amount: ";
+            resultLabel.TextColor = Xamarin.Forms.Color.White;
             resultLabel.VerticalTextAlignment = Xamarin.Forms.TextAlignment.Center;
 
             resultLabel.Text += result[1];
@@ -104,6 +132,46 @@ namespace Coffee_Query
                     result[0] = "Long amount: ";
                     result[1] = longAmount.amount.ToString();
                     return result;
+
+                case Coffees.DoppioPlus:
+                    result[0] = "Doppio+ amount: ";
+                    result[1] = doppioPlusAmount.amount.ToString();
+                    return result;
+
+                case Coffees.Americano:
+                    result[0] = "Americano amount: ";
+                    result[1] = americanoAmount.amount.ToString();
+                    return result;
+
+                case Coffees.Espressox2:
+                    result[0] = "Double espresso amount: ";
+                    result[1] = espressox2Amount.amount.ToString();
+                    return result;
+
+                case Coffees.CappuccinoPlus:
+                    result[0] = "Cappuccino+ amount: ";
+                    result[1] = cappuccinoPlusAmount.amount.ToString();
+                    return result;
+
+                case Coffees.CappuccinoMix:
+                    result[0] = "Cappuccino Mix amount: ";
+                    result[1] = cappuccinoMixAmount.amount.ToString();
+                    return result;
+
+                case Coffees.Latte:
+                    result[0] = "Latte amount: ";
+                    result[1] = latteAmount.amount.ToString();
+                    return result;
+
+                case Coffees.FlatWhite:
+                    result[0] = "Flat white amount: ";
+                    result[1] = flatWhiteAmount.amount.ToString();
+                    return result;
+
+                case Coffees.EspressoMacchiato:
+                    result[0] = "Espresso Macchiato amount: ";
+                    result[1] = espressoMacchiatoAmount.amount.ToString();
+                    return result;
             }
             
 
@@ -120,6 +188,7 @@ namespace Coffee_Query
             string[] result = ChangeAmount(decrease_increase, coffeToChange);
             resultLabel.FontSize = 17;
             resultLabel.Text = "Amount: ";
+            resultLabel.TextColor = Xamarin.Forms.Color.White;
             resultLabel.VerticalTextAlignment = Xamarin.Forms.TextAlignment.Center;
             
 
@@ -179,6 +248,53 @@ namespace Coffee_Query
                         result[1] = longAmount.amount.ToString();
                         return result;
 
+                    case Coffees.DoppioPlus:
+                        --doppioPlusAmount.amount;
+                        result[0] = "Doppio+ amount: ";
+                        result[1] = doppioPlusAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.Americano:
+                        --americanoAmount.amount;
+                        result[0] = "Americano amount: ";
+                        result[1] = americanoAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.Espressox2:
+                        --espressox2Amount.amount;
+                        result[0] = "Double espresso amount: ";
+                        result[1] = espressox2Amount.amount.ToString();
+                        return result;
+
+                    case Coffees.CappuccinoPlus:
+                        --cappuccinoPlusAmount.amount;
+                        result[0] = "Cappuccino+ amount: ";
+                        result[1] = cappuccinoPlusAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.CappuccinoMix:
+                        --cappuccinoMixAmount.amount;
+                        result[0] = "Cappuccino Mix amount: ";
+                        result[1] = cappuccinoMixAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.Latte:
+                        --latteAmount.amount;
+                        result[0] = "Latte amount: ";
+                        result[1] = latteAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.FlatWhite:
+                        --flatWhiteAmount.amount;
+                        result[0] = "Flat white amount: ";
+                        result[1] = flatWhiteAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.EspressoMacchiato:
+                        --espressoMacchiatoAmount.amount;
+                        result[0] = "Espresso Macchiato amount: ";
+                        result[1] = espressoMacchiatoAmount.amount.ToString();
+                        return result;
                 }
             }
             else                                                    //case false - increase
@@ -219,6 +335,54 @@ namespace Coffee_Query
                         ++longAmount.amount;
                         result[0] = "Long amount: ";
                         result[1] = longAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.DoppioPlus:
+                        ++doppioPlusAmount.amount;
+                        result[0] = "Doppio+ amount: ";
+                        result[1] = doppioPlusAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.Americano:
+                        ++americanoAmount.amount;
+                        result[0] = "Americano amount: ";
+                        result[1] = americanoAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.Espressox2:
+                        ++espressox2Amount.amount;
+                        result[0] = "Double espresso amount: ";
+                        result[1] = espressox2Amount.amount.ToString();
+                        return result;
+
+                    case Coffees.CappuccinoPlus:
+                        ++cappuccinoPlusAmount.amount;
+                        result[0] = "Cappuccino+ amount: ";
+                        result[1] = cappuccinoPlusAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.CappuccinoMix:
+                        ++cappuccinoMixAmount.amount;
+                        result[0] = "Cappuccino Mix amount: ";
+                        result[1] = cappuccinoMixAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.Latte:
+                        ++latteAmount.amount;
+                        result[0] = "Latte amount: ";
+                        result[1] = latteAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.FlatWhite:
+                        ++flatWhiteAmount.amount;
+                        result[0] = "Flat white amount: ";
+                        result[1] = flatWhiteAmount.amount.ToString();
+                        return result;
+
+                    case Coffees.EspressoMacchiato:
+                        ++espressoMacchiatoAmount.amount;
+                        result[0] = "Espresso Macchiato amount: ";
+                        result[1] = espressoMacchiatoAmount.amount.ToString();
                         return result;
                 }
             }

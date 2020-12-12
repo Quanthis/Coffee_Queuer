@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coffee_Query.AddToQueue">
+             x:Class="Coffee_Query.AddToQueue"
+             BackgroundImageSource="Background.jpg">
 
     <NavigationPage.TitleView>
         <Label Text="Add coffee to queue" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -55,7 +56,71 @@
 
                     <Image Source="LongImage.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Long" Clicked="IncreaseLongAmount" HorizontalOptions="FillAndExpand"/>
-                    <Label x:Name="LongDisplay" FontSize="17"/>
+                    <Label x:Name="LongDisplay" FontSize="17"/> 
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Doppio+" Clicked="ChangeDoppioAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="DoppioPlusDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Americano" Clicked="ChangeAmericanoAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="AmericanoDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Double Espresso" Clicked="ChangeEspressox2Amount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="Espressox2Display" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Cappucino+" Clicked="ChangeCappuccinoPlusAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="CappuinoPlusDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Cappucino Mix" Clicked="ChangeCappuccinoMixAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="CappuinoMixDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Latte" Clicked="ChangeLatteAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="LatteDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Flat White" Clicked="ChangeFlatWhiteAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="FlatWhiteDisplay" FontSize="17"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Button Text="Espresso Macchiato" Clicked="ChangeEspressoMacchiatoAmount" HorizontalOptions="FillAndExpand"/>
+                    <Label x:Name="EspressoMacchiatoDisplay" FontSize="17"/>
 
                 </StackLayout>
 

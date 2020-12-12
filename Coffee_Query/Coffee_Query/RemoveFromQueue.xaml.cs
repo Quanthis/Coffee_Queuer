@@ -31,6 +31,15 @@ namespace Coffee_Query
                 BlackoDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.Black, BlackoDisplay);
                 LongDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.Long, LongDisplay);
                 EspressoDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.Espresso, EspressoDisplay);
+
+                DoppioPlusDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.DoppioPlus, DoppioPlusDisplay);
+                AmericanoDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.Americano, AmericanoDisplay);
+                Espressox2Display = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.Espressox2, Espressox2Display);
+                CappuinoPlusDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.CappuccinoPlus, CappuinoPlusDisplay);
+                CappuinoMixDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.CappuccinoMix, CappuinoMixDisplay);
+                LatteDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.Latte, LatteDisplay);
+                FlatWhiteDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.FlatWhite, FlatWhiteDisplay);
+                EspressoMacchiatoDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.EspressoMacchiato, EspressoMacchiatoDisplay);
             });
         }
 
@@ -62,6 +71,46 @@ namespace Coffee_Query
         private async void DecreaseEspressoAmount(object sender, EventArgs e)
         {
             EspressoDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.Espresso, EspressoDisplay);
+        }
+
+        private async void ChangeDoppioAmount(object sender, EventArgs e)
+        {
+            DoppioPlusDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.DoppioPlus, DoppioPlusDisplay);
+        }
+
+        private async void ChangeAmericanoAmount(object sender, EventArgs e)
+        {
+            AmericanoDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.Americano, AmericanoDisplay);
+        }
+
+        private async void ChangeEspressox2Amount(object sender, EventArgs e)
+        {
+            Espressox2Display = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.Espressox2, Espressox2Display);
+        }
+
+        private async void ChangeCappuccinoPlusAmount(object sender, EventArgs e)
+        {
+            CappuinoPlusDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.CappuccinoPlus, CappuinoPlusDisplay);
+        }
+
+        private async void ChangeCappuccinoMixAmount(object sender, EventArgs e)
+        {
+            CappuinoMixDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.CappuccinoMix, CappuinoMixDisplay);
+        }
+
+        private async void ChangeLatteAmount(object sender, EventArgs e)
+        {
+            LatteDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.Latte, LatteDisplay);
+        }
+
+        private async void ChangeFlatWhiteAmount(object sender, EventArgs e)
+        {
+            FlatWhiteDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.FlatWhite, FlatWhiteDisplay);
+        }
+
+        private async void ChangeEspressoMacchiatoAmount(object sender, EventArgs e)
+        {
+            EspressoMacchiatoDisplay = loadCoffees.ReturnCheckedAmount(true, CoffeeCounter.Coffees.EspressoMacchiato, EspressoMacchiatoDisplay);
         }
     }
 }
