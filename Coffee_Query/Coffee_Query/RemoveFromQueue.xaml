@@ -71,7 +71,7 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Image Source="Americano.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Americano" Clicked="ChangeAmericanoAmount" HorizontalOptions="FillAndExpand"/>
                     <Label x:Name="AmericanoDisplay" FontSize="17"/>
 
@@ -79,7 +79,7 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Image Source="DoubleEspresso.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Double Espresso" Clicked="ChangeEspressox2Amount" HorizontalOptions="FillAndExpand"/>
                     <Label x:Name="Espressox2Display" FontSize="17"/>
 
@@ -87,7 +87,7 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Image Source="CappucinoPlus.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Cappucino+" Clicked="ChangeCappuccinoPlusAmount" HorizontalOptions="FillAndExpand"/>
                     <Label x:Name="CappuinoPlusDisplay" FontSize="17"/>
 
@@ -95,7 +95,7 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Image Source="CappuccinoMix.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Cappucino Mix" Clicked="ChangeCappuccinoMixAmount" HorizontalOptions="FillAndExpand"/>
                     <Label x:Name="CappuinoMixDisplay" FontSize="17"/>
 
@@ -103,7 +103,7 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Image Source="Latte.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Latte" Clicked="ChangeLatteAmount" HorizontalOptions="FillAndExpand"/>
                     <Label x:Name="LatteDisplay" FontSize="17"/>
 
@@ -111,7 +111,7 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Image Source="NoImageYet.png" WidthRequest="100" Aspect="AspectFit"/>
+                    <Image Source="FlatWhite.jpg" WidthRequest="100" Aspect="AspectFit"/>
                     <Button Text="Flat White" Clicked="ChangeFlatWhiteAmount" HorizontalOptions="FillAndExpand"/>
                     <Label x:Name="FlatWhiteDisplay" FontSize="17"/>
 
