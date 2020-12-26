@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -43,6 +40,11 @@ namespace Coffee_Query
                 FlatWhiteDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.FlatWhite, FlatWhiteDisplay);
                 EspressoMacchiatoDisplay = loadCoffees.ReturnCheckedAmount(CoffeeCounter.Coffees.EspressoMacchiato, EspressoMacchiatoDisplay);
             });
+        }
+
+        private async void GoToFillingOrders(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RemoveFromQueue(loadCoffees));
         }
 
         private async void IncreaseLatteMacchiatioAmount(object sender, EventArgs e)

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Coffee_Query
@@ -26,6 +21,11 @@ namespace Coffee_Query
         private async void OnRemove(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RemoveFromQueue(counter));
+        }
+
+        private async void MoveToLicenses(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Coffee_Query.Licenses());
         }
     }
 }

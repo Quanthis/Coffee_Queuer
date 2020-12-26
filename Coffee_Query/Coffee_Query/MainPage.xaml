@@ -9,12 +9,26 @@
     </NavigationPage.TitleView>
 
 
-    <StackLayout Margin="20" VerticalOptions="Fill" x:Name="PageContent" HorizontalOptions="CenterAndExpand">
+    <ScrollView>
 
-        <Button Text="ADD " Margin="30" HeightRequest="100" Font="Bold" FontSize="50" Clicked="OnAdd" />
+        <StackLayout Margin="20" x:Name="PageContent" Orientation="Vertical">
 
-        <Button Text="REMOVE" Margin="30" HeightRequest="100" Font="Bold" FontSize="50" Clicked="OnRemove"/>
+            <StackLayout x:Name="MainButtons" HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
 
-    </StackLayout>
+                <Button Text="ADD " Margin="30" HeightRequest="100" Font="Bold" FontSize="50" Clicked="OnAdd" VerticalOptions="Start"/>
+
+                <Button Text="REMOVE" Margin="30" HeightRequest="100" Font="Bold" FontSize="50" Clicked="OnRemove" VerticalOptions="Start"/>
+
+            </StackLayout>
+
+            <StackLayout x:Name="Licenses" VerticalOptions="End">
+                
+                <Button Text="Licenses" Margin="30" Clicked="MoveToLicenses"/>
+                
+            </StackLayout>
+
+        </StackLayout>
+
+    </ScrollView>
 
 </ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Query.Licenses"
+             BackgroundImageSource="Background.jpg">
+
+    <NavigationPage.TitleView>
+        <Label Text="Licenses and special thanks" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Orientation="Vertical" Margin="20">
+
+                <StackLayout x:Name="General" Orientation="Vertical" VerticalOptions="Start">
+
+                    <Button Text="PixBay License" Clicked="ViewPixbayLicense"/>
+
+                    <Button Text="Unplash License" Clicked="ViewUnplashLicense"/>
+
+                </StackLayout>
+
+                <StackLayout x:Name="Photographers" Orientation="Vertical" VerticalOptions="Center">
+
+                    <Label TextColor="White">
+                        Thanks to every single photographer of every coffee image listed below (click to see photographer's profile):
+                    </Label>
+
+                    <Button Text="Latte Macchiato" Clicked="ViewLatteMacchiato"/>
+                    <Button Text="Cappuccino" Clicked="ViewCappuccino"/>
+                    <Button Text="Milk" Clicked="ViewMilk"/>
+                    <Button Text="Espresso" Clicked="ViewEspresso"/>
+                    <Button Text="Black Coffee" Clicked="ViewBlack"/>
+                    <Button Text="Long" Clicked="ViewLong"/>
+                    <Button Text="Americano" Clicked="ViewAmericano"/>
+                    <Button Text="Double Espresso" Clicked="ViewDoubleEspresso"/>
+                    <Button Text="Cappuccino+" Clicked="ViewCappuccinoPlus"/>
+                    <Button Text="Cappuccino Mix" Clicked="ViewCappuccinoMix"/>
+                    <Button Text="Latte" Clicked="ViewLatte"/>
+                    <Button Text="Flat White" Clicked="ViewFlatWhite"/>
+                    <Button Text="Espresso Macchiato" Clicked="ViewEspressoMacchiato"/>
+
+                    <Label TextColor="White">
+                        One photographer decided to remain anonymous at time.
+                    </Label>
+
+                </StackLayout>
+
+                <StackLayout x:Name="Creator" Orientation="Vertical" VerticalOptions="End">
+
+                    <Button Text="Profile of application creator" Clicked="ViewCreator"/>
+
+                </StackLayout>
+
+                <StackLayout x:Name="AdditionalNotes" Orientation="Vertical" VerticalOptions="End">
+
+                    <Label FontSize="Small" TextColor="White">
+                        Please note that coffe you order at your café may differ from what you see in the picture. Coffee looks may differ depending on their preparation method, water and milk temperature, steam and brewing pressure and few other factors.
+                    </Label>
+                    
+                </StackLayout>
+
+            </StackLayout>      
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
