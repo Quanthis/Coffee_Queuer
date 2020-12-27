@@ -40,6 +40,7 @@
                     <Button Text="Latte" Clicked="ViewLatte"/>
                     <Button Text="Flat White" Clicked="ViewFlatWhite"/>
                     <Button Text="Espresso Macchiato" Clicked="ViewEspressoMacchiato"/>
+                    <Button Text="Background" Clicked="ViewBackground"/>
 
                     <Label TextColor="White">
                         One photographer decided to remain anonymous at time.
